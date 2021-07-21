@@ -1,0 +1,38 @@
+.board-container {
+    margin: 0 auto;
+    width: 35%;
+    border: 5px solid #051558;
+  
+}
+
+
+table{
+    margin-top: 10px;
+    margin: 0 auto;
+}
+
+.board td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 3px;
+   
+   
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+
+.num {
+    opacity: 1;
+}
+
+.mine {
+    opacity: 1;
+}
