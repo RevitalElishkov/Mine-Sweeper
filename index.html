@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mine Sweeper</title>
     <link rel="stylesheet" href="css/app.css">
+    
 </head>
 <body onload="initGame()">
+    <h2>Mine Sweeper</h2>
+<div class="timer">
+    00:00
+</div>
+<div class="level">
+    <button class='Beginner' onclick="levels('Beginner')">Beginner</button>
+    <button class='Medium' onclick="levels('Medium')">Medium</button>
+    <button class='Expert' onclick="levels('Expert')">Expert</button>
 
+</div>
+<div class="modal"></div>
         <table border="1" cellpadding="10">
             <tbody class="board"></tbody>
         </table> 
    
     <script src="js/utils.js"></script>
     <script src="js/game.js"></script>
-   
 </body>
 </html>
