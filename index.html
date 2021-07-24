@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mine Sweeper</title>
     <link rel="stylesheet" href="css/app.css">
-    
+
 </head>
+
 <body onload="initGame()">
     <h2>Mine Sweeper</h2>
-<div class="timer">
-    00:00
-</div>
-<div class="level">
-    <button class='Beginner' onclick="levels('Beginner')">Beginner</button>
-    <button class='Medium' onclick="levels('Medium')">Medium</button>
-    <button class='Expert' onclick="levels('Expert')">Expert</button>
 
-</div>
-<div class="modal"></div>
-        <table border="1" cellpadding="10">
-            <tbody class="board"></tbody>
-        </table> 
-   
+    <div class="level">
+        <button class="btn" class='Beginner' onclick="levels('Beginner')">Beginner</button>
+        <button class="btn" class='Medium' onclick="levels('Medium')">Medium</button>
+        <button class="btn" class='Expert' onclick="levels('Expert')">Expert</button>
+    </div>
+
+    <div class = "statuses">
+        <span class="numLives">💖3</span>
+        <button class="status" onclick="initGame()">😊</button>
+        <span class="timer"> 00:00 </span>
+    </div>
+
+
+    <div class="modal"></div>
+    <table border="1" cellpadding="1">
+        <tbody class="board"></tbody>
+    </table>
+    <div class="footer">Revital Elishkov</div>
+
     <script src="js/utils.js"></script>
     <script src="js/game.js"></script>
 </body>
+
 </html>

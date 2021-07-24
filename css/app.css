@@ -1,5 +1,6 @@
 body {
     text-align:  center;
+    background-color: #f6fff8;
 
 }
 
@@ -20,8 +21,49 @@ body {
     
 }
 
-h1 {
+h2 {
+    margin-top: 4px;
+    margin-bottom: 15px;
     text-align:  center;
+}
+
+.level {
+    margin-bottom: 10px;
+}
+
+.btn {
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.numLives {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.status {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.timer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.statuses {
+    border-style: solid;
+    /* width: 50%; */
+    border-color: #a4c3b2;
+    padding: 4px;
+    margin-bottom: 2px;
+    
+}
+
+.status {
+    size: 30px;
+    
 }
 
 .timer {
@@ -30,14 +72,16 @@ h1 {
     text-align:  auto;
 }
 
-.level {
-    margin-bottom: 30px;
-}
 .modal {
-    margin-left: 55px;
+    border-style: solid;
+    background-color: #6b9080;
+    margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
     text-align:  auto;
+    color: white;
+    display: none;
 }
 
 table {
@@ -52,9 +96,8 @@ table {
     text-align: center;
     transition: 0.5s;
     border-radius: 3px;
-    background-color: grey;
+    background-color: #6b9080;
     color: white;
-   
 }
 
 .cell {
@@ -64,11 +107,17 @@ table {
     font-size: 1.5em;
     
 }
-/* 
-td.mine {
-    background-color: tomato;
-   
-} */
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#cce3de;
+    color: white;
+    text-align: center;
+}
+
 
 
 

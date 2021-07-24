@@ -47,3 +47,32 @@ function stopWatch() {
   document.querySelector('.timer').innerHTML = `${minuts}:${seconds}`
 }
 
+///draw-nums:
+
+//var gNums = [1, 2, 3, 4, 5, 6, 7]
+
+// shuffle(gNums)
+// console.log('gNums:', gNums)
+
+// var num = drawNum();
+// console.log('Num is:', num);
+// console.log('gNums:', gNums)
+// num = drawNum();
+// console.log('Num is:', num);
+// console.log('gNums:', gNums)
+
+function drawNum() {
+    return gNums.pop()
+}
+
+function shuffle(items) {
+    var randIdx, keep, i;
+    for (i = items.length - 1; i > 0; i--) {
+        randIdx = getRandomInt(0, items.length);
+
+        keep = items[i];
+        items[i] = items[randIdx];
+        items[randIdx] = keep;
+    }
+    return items;
+}
